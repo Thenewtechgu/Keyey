@@ -1,2 +1,2 @@
 # Keyey
-A custom made 75 percent keyboard powered by the Raspberry pi Pico. ( Might upgrade to the pico 2 W and give it a batery)
+A custom made 75 percent keyboard powered by the RP2350. It has bluetooth and a 2000mah batterry
