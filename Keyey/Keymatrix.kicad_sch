@@ -5,9 +5,10 @@
 	(uuid "983fe9dc-1606-494b-b939-2d8b77986585")
 	(paper "A4")
 	(lib_symbols
-		(symbol "2026-07-22_12-53-14:EC11E15244G1"
+		(symbol "Device:RotaryEncoder_Switch_MP"
 			(pin_names
 				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -15,51 +16,27 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 13.97 7.62 0)
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "EC11E15244G1"
-				(at 15.24 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "EC11E15244G1_AAL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "EC11E15244G1"
-				(at 0 0 0)
+			(property "Value" "RotaryEncoder_Switch_MP"
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Footprint" ""
+				(at -3.81 4.064 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -69,17 +46,29 @@
 					)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
+			(property "Datasheet" ""
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "ki_keywords" "EC11E15244G1"
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "rotary switch encoder switch push button"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -90,7 +79,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "EC11E15244G1_AAL"
+			(property "ki_fp_filters" "RotaryEncoder*Switch*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -101,13 +90,24 @@
 					)
 				)
 			)
-			(symbol "EC11E15244G1_0_1"
+			(symbol "RotaryEncoder_Switch_MP_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 7.62 -10.16)
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
 					)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -116,10 +116,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -2.54) (xy 9.8425 -2.54)
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
 					)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -128,10 +128,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -7.62) (xy 11.43 -7.62)
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
 					)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -140,10 +140,10 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -10.16) (xy 20.32 -10.16)
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
 					)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -151,22 +151,22 @@
 					)
 				)
 				(circle
-					(center 10.16 -2.54)
-					(radius 0.3048)
+					(center -3.81 0)
+					(radius 0.254)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 10.16 -5.08) (xy 11.1125 -2.54)
+						(xy -0.635 -1.778) (xy -0.635 1.778)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -174,10 +174,10 @@
 					)
 				)
 				(circle
-					(center 10.16 -5.08)
-					(radius 0.3048)
+					(center -0.381 0)
+					(radius 1.905)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -186,10 +186,22 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -5.3848) (xy 10.16 -6.35)
+						(xy -0.381 -1.778) (xy -0.381 1.778)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 -2.794)
+					(mid -3.0988 -0.0635)
+					(end -0.381 2.667)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -198,10 +210,10 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -6.35) (xy 12.7 -6.35)
+						(xy -0.127 1.778) (xy -0.127 -1.778)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -210,10 +222,10 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -7.62) (xy 11.43 -6.35)
+						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -222,10 +234,10 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 0) (xy 7.62 0)
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -234,10 +246,22 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -2.2225) (xy 12.7 0)
+						(xy 3.81 1.016) (xy 3.81 -1.016)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -245,22 +269,10 @@
 					)
 				)
 				(circle
-					(center 12.7 -2.54)
-					(radius 0.3048)
+					(center 4.318 1.016)
+					(radius 0.127)
 					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -5.08) (xy 13.6525 -2.54)
-					)
-					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -268,10 +280,10 @@
 					)
 				)
 				(circle
-					(center 12.7 -5.08)
-					(radius 0.3048)
+					(center 4.318 -1.016)
+					(radius 0.127)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -280,10 +292,10 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -6.35) (xy 12.7 -5.3848)
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -292,113 +304,21 @@
 				)
 				(polyline
 					(pts
-						(xy 17.78 -3.4925) (xy 17.78 -2.54)
+						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
 					)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(circle
-					(center 17.78 -3.81)
-					(radius 0.3048)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 17.78 -6.35) (xy 19.05 -3.81)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 17.78 -6.35)
-					(radius 0.3048)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 17.78 -6.6548) (xy 17.78 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 20.32 2.54) (xy 7.62 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 20.32 -2.54) (xy 17.78 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 20.32 -7.62) (xy 17.78 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 20.32 -10.16) (xy 20.32 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
+			)
+			(symbol "RotaryEncoder_Switch_MP_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
 					(name "A"
 						(effects
 							(font
@@ -414,9 +334,9 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 7.62)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -432,9 +352,9 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 7.62)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
 					(name "C"
 						(effects
 							(font
@@ -450,17 +370,17 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 27.94 -7.62 180)
-					(length 7.62)
-					(name "D"
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "D"
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -468,17 +388,35 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 27.94 -2.54 180)
-					(length 7.62)
-					(name "E"
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "E"
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -671,6 +609,105 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -4166,7 +4203,7 @@
 	)
 	(global_label "B"
 		(shape input)
-		(at 252.73 31.75 180)
+		(at 265.43 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4176,7 +4213,7 @@
 		)
 		(uuid "18f883e4-dcc3-4a40-9362-acfbfa131f6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.4748 31.75 0)
+			(at 261.1748 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4262,7 +4299,7 @@
 	)
 	(global_label "A"
 		(shape input)
-		(at 252.73 29.21 180)
+		(at 265.43 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4272,7 +4309,7 @@
 		)
 		(uuid "5216fdf1-7ec6-4ad8-9dac-befb28d618da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.6562 29.21 0)
+			(at 261.3562 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6055,97 +6092,6 @@
 			(project "Keyey"
 				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
 					(reference "D44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2026-07-22_12-53-14:EC11E15244G1")
-		(at 252.73 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19b78b3f-5ac3-4d18-865b-8093cfd7e46e")
-		(property "Reference" "SW1"
-			(at 266.7 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "EC11E15244G1"
-			(at 266.7 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "2026-07-22_12-53-14:EC11E15244G1_AAL"
-			(at 252.73 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "EC11E15244G1"
-			(at 252.73 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "E"
-			(uuid "191a3286-6940-4355-a7e3-0ceb41281704")
-		)
-		(pin "D"
-			(uuid "3bee154c-5c36-49a0-a94d-c33eb8825dc1")
-		)
-		(pin "B"
-			(uuid "276f3100-e22d-4650-9ce7-a437dbccf3d3")
-		)
-		(pin "C"
-			(uuid "e817ae6c-c1c1-43dd-918a-fe3e7df1fa02")
-		)
-		(pin "A"
-			(uuid "5c43a2c7-4553-45a4-b1dd-1e4d3611b9f2")
-		)
-		(instances
-			(project "Keyey"
-				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8017,7 +7963,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 252.73 36.83 0)
+		(at 265.43 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8028,7 +7974,7 @@
 		(fields_autoplaced yes)
 		(uuid "3526b033-6efc-45b6-8f0f-3a90e2a4003a")
 		(property "Reference" "#PWR0296"
-			(at 252.73 43.18 0)
+			(at 265.43 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8039,7 +7985,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 252.73 41.91 0)
+			(at 265.43 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8049,7 +7995,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 36.83 0)
+			(at 265.43 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8060,7 +8006,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 36.83 0)
+			(at 265.43 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8071,7 +8017,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 252.73 36.83 0)
+			(at 265.43 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8482,6 +8428,98 @@
 			(project "Keyey"
 				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
 					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 273.05 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38715616-809c-4ea6-a717-2c6c9d47ea9d")
+		(property "Reference" "SW6"
+			(at 273.05 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 273.05 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 269.24 30.226 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 273.05 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "C"
+			(uuid "5e19bf8a-faf4-4bee-9715-e4294a3ecba8")
+		)
+		(pin "MP"
+			(uuid "5ebb21b1-b141-46c2-95f8-a621a3eb7940")
+		)
+		(pin "B"
+			(uuid "ea0afabe-00dd-4a56-b079-da557702d9ba")
+		)
+		(pin "A"
+			(uuid "897d2632-a171-4eff-b633-55cccb7738e0")
+		)
+		(pin "S1"
+			(uuid "68573810-0205-4b3e-b923-a80c0c683bec")
+		)
+		(pin "S2"
+			(uuid "d73acd8c-ddde-468c-96e2-544f3070d548")
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -9168,6 +9206,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 77.47 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46abed93-2168-4c37-8dd0-36907eefb0cf")
+		(property "Reference" "H3"
+			(at 80.01 138.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 80.01 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 77.47 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 77.47 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 231.14 104.14 90)
 		(unit 1)
@@ -9450,6 +9564,82 @@
 			(project "Keyey"
 				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
 					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 95.25 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b627d32-d340-4881-8c63-b44a1e547e99")
+		(property "Reference" "H8"
+			(at 97.79 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 97.79 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 95.25 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 95.25 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -12640,6 +12830,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 59.69 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e856fd7-163b-4871-9f82-f9d716be24f9")
+		(property "Reference" "H6"
+			(at 62.23 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 62.23 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 59.69 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 59.69 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148W")
 		(at 118.11 31.75 90)
 		(unit 1)
@@ -14362,6 +14628,234 @@
 			(project "Keyey"
 				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
 					(reference "SW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 40.64 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9aaa8b68-bafa-45f5-92a2-6a51425b57cd")
+		(property "Reference" "H5"
+			(at 43.18 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 43.18 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 40.64 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 40.64 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 40.64 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b044a7b-7314-43e5-be2c-1106de44b727")
+		(property "Reference" "H1"
+			(at 43.18 138.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 43.18 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 40.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 40.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 95.25 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c155b15-255c-416b-81a8-fbae4f3b80dc")
+		(property "Reference" "H4"
+			(at 97.79 138.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 97.79 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 95.25 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 95.25 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -19237,6 +19731,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 77.47 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dff3dbc9-43ce-49d4-8f99-6ce9d22f29b6")
+		(property "Reference" "H7"
+			(at 80.01 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 80.01 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 77.47 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 77.47 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 86.36 46.99 0)
 		(unit 1)
@@ -19311,6 +19881,82 @@
 			(project "Keyey"
 				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
 					(reference "SW28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 59.69 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7a55bf9-c3e6-4cae-aab6-058f8186681a")
+		(property "Reference" "H2"
+			(at 62.23 138.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 62.23 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 59.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 59.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Keyey"
+				(path "/edd52eb0-3b06-40db-996c-6985879c755e/3cdd3ee9-c878-4e4e-a8f1-e6d9d2dc9cd4"
+					(reference "H2")
 					(unit 1)
 				)
 			)

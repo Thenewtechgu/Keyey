@@ -873,12 +873,6 @@
 		(uuid "62507ed2-9702-49e3-a829-cc44c06535e6")
 	)
 	(junction
-		(at 26.67 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6344977b-b873-4729-bce3-ce55b2ed00da")
-	)
-	(junction
 		(at 80.01 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1240,7 +1234,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 215.9) (xy 26.67 218.44)
+			(xy 26.67 215.9) (xy 26.67 226.06)
 		)
 		(stroke
 			(width 0)
@@ -1267,16 +1261,6 @@
 			(type default)
 		)
 		(uuid "362c6f3c-5c13-44b5-b67b-18c7e4993def")
-	)
-	(wire
-		(pts
-			(xy 26.67 218.44) (xy 26.67 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cb398f8-ed7a-4350-a9f8-fc64f8429a00")
 	)
 	(wire
 		(pts
@@ -16888,7 +16872,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "75377dce-b7a2-4106-aac8-7b3ef186cdc0")
 		(property "Reference" "#PWR0283"
 			(at 38.1 218.44 0)
@@ -16902,7 +16885,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 30.48 218.4399 90)
+			(at 32.512 216.662 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20515,85 +20498,6 @@
 			(project "Keyey"
 				(path "/edd52eb0-3b06-40db-996c-6985879c755e/bca6c043-d1b0-40dc-a0ac-a65731fd1828"
 					(reference "D136")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 26.67 218.44 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92bf4ba8-7379-4e2f-98ff-e73e67cc0975")
-		(property "Reference" "#PWR0282"
-			(at 33.02 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 30.48 218.4399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "823bf918-27e4-4a5d-91af-a62e6ed819a2")
-		)
-		(instances
-			(project "Keyey"
-				(path "/edd52eb0-3b06-40db-996c-6985879c755e/bca6c043-d1b0-40dc-a0ac-a65731fd1828"
-					(reference "#PWR0282")
 					(unit 1)
 				)
 			)
