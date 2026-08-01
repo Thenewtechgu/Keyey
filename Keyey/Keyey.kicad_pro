@@ -146,7 +146,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -531,7 +531,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "/Users/Thenewtechguy/Desktop/Keyey/Schematics + PCB images/",
+      "plot": "/Users/Thenewtechguy/Desktop/Keyey/Schematics + PCB images + PCB STEP file/PCB image/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -580,19 +580,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -604,7 +604,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -767,6 +767,12 @@
           "label": "KLC_S4.2_VREG_LX",
           "name": "KLC_S4.2_VREG_LX",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_VREG_VOUT",
+          "name": "KLC_S4.2_VREG_VOUT",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -817,7 +823,7 @@
         "uuid": "edd52eb0-3b06-40db-996c-6985879c755e"
       }
     ],
-    "used_designators": "H5-8",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
